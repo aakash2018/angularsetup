@@ -1,0 +1,28 @@
+<div class="container-fluid mt-lg-5">
+	<div class="row">
+		<div class="col-12">
+			<h1 style="color:blue;">Company List</h1>
+			<div class="input-group mb-3">
+				<button type="button" class="btn-primary"><a routerLink="/add"> Add Company</a></button>
+			</div>
+			<table class="table">
+				<thead class="thead-dark">
+					<tr>
+						<th> S.no</th>
+						<th class="table-name">Company Name</th>
+						<th>Review</th>
+						<th>Rating</th>
+					</tr>
+				</thead>
+				<tr *ngFor="let userinfo of userData;let i = index">
+					<td class="form-check">
+						{{i+1}}
+					</td>
+					<td>{{userinfo.name}} </td>
+					<td>{{userinfo.review}}</td>
+					<td>{{userinfo.rating}}</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>

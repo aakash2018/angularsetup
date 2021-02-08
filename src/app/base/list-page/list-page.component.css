@@ -1,0 +1,27 @@
+table {    
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.table-name {
+    width: 30%;
+}
+table tr {
+    display: table-row;
+    width: 100%;
+} 
+ table tr td {
+    display: table-cell;
+    width: 50%;
+}
+.imageTable {
+    float: left;
+    width: 100%;
+}
+.autoResizeImage {
+    width: 53%;
+}
+button > a {
+    color:white
+}
